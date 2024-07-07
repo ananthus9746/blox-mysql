@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server';
 import pool from '../../lib/db';
 import { RowDataPacket } from 'mysql2';
 
-// Define types for expected results
 interface Referral extends RowDataPacket {
     blox_id: number;
     referral_points: number;
